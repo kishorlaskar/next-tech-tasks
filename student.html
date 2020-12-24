@@ -1,0 +1,71 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , intial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
+</head>
+<body>
+  <div class="container mt-5">
+      <h1 class="alert-info text-center mb-5 p-3">
+          Student Crud
+      </h1>
+      <div class="row">
+          <form class="col-sm-5" id="myForm">
+              <h3 class="alert-warning text-center p-2">
+                  Add / Update Student
+              </h3>
+              <div>
+
+                  <input type="text" class="form-control" id="studentid" style="display: none;">
+                  <label for="nameid" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="nameid">
+              </div>
+              <div>
+                  <label for="emailid" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="emailid">
+              </div>
+              <div>
+                  <label for="phoneid" class="form-label">Phone</label>
+                  <input type="text" class="form-control" id="phoneid">
+              </div>
+              <div>
+                  <label for="semasterid" class="form-label">Semaster</label>
+                  <input type="text" class="form-control" id="semasterid">
+              </div>
+              <div class="mt-5">
+                  <button type="submit" class="btn btn-primary" id="btnadd">
+                      Save
+                  </button>
+              </div>
+              <div id="msg"></div>
+
+          </form>
+          <div class="col-sm-7 text-center">
+              <h3 class="alert-warning p-2"> Show Student Information </h3>
+              <table class="table">
+                  <thead>
+                  <tr>
+                      <th scope="col">Id</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Phone</th>
+                      <th scope="col">Semaster</th>
+                      <th scope="col">Action</th>
+                  </tr>
+                  </thead>
+                  <tbody id="tbody"></tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+
+<script src="js/bootstrap.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
